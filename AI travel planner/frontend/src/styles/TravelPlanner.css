@@ -1,0 +1,210 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title */
+h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #555;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+}
+
+/* Loading Animation */
+.loading {
+    color: #ffeb3b;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+}
+
+/* Results Section */
+h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.loading-message {
+    color: #007bff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card {
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.no-data {
+    color: gray;
+}
